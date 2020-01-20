@@ -1,7 +1,9 @@
 # Graph-Bert
 Source code of "Graph-Bert: Only Attention is Needed for Learning Graph Representations". 
 
-The paper is available at https://arxiv.org/abs/2001.05140
+The paper at arXiv is available at https://arxiv.org/abs/2001.05140
+
+At our group homepage, we also have a copy released: http://www.ifmlab.org/files/paper/graph_bert.pdf
 
 Please check the script.py as the entry point. We suggest to run the code with Pycharm. 
 
