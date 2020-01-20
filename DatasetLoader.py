@@ -119,19 +119,6 @@ class DatasetLoader(dataset):
             idx_train = range(140)
             idx_test = range(200, 1200)
             idx_val = range(1200, 1500)
-        elif self.dataset_name == 'citeseer':
-            idx_train = pickle.load(open(self.dataset_source_folder_path + '/train_index', 'rb'))
-            idx_test = range(120, 1200)
-            idx_val = range(1200, 1500)
-            #features = self.normalize(features)
-        elif self.dataset_name == 'pubmed':
-            idx_train = range(60)
-            idx_test = range(60,500)
-            idx_val = range(700, 1000)
-        elif self.dataset_name == 'cora-small':
-            idx_train = range(5)
-            idx_val = range(5, 10)
-            idx_test = range(5, 10)
 
         features = torch.FloatTensor(np.array(features.todense()))
         labels = torch.LongTensor(np.where(one_hot_labels)[1])
