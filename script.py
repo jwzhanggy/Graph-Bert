@@ -21,22 +21,10 @@ np.random.seed(1)
 torch.manual_seed(1)
 
 #---- cora-small is for debuging only ----
-if dataset_name == 'cora-small':
-    nclass = 7
-    nfeature = 1433
-    ngraph = 10
-elif dataset_name == 'cora':
+if dataset_name == 'cora':
     nclass = 7
     nfeature = 1433
     ngraph = 2708
-elif dataset_name == 'citeseer':
-    nclass = 6
-    nfeature = 3703
-    ngraph = 3312
-elif dataset_name == 'pubmed':
-    nclass = 3
-    nfeature = 500
-    ngraph = 19717
 
 
 #---- Step 1: WL based graph coloring ----
@@ -69,7 +57,7 @@ if 0:
 
 #---- Step 2: intimacy calculation and subgraph batching ----
 if 0:
-    for k in [6, 7, 8, 9]:#, 10, 15, 20, 25, 30, 35, 40, 45, 50]:
+    for k in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50]:
         print('************ Start ************')
         print('Subgraph Batching, dataset: ' + dataset_name + ', k: ' + str(k))
         # ---- objection initialization setction ---------------
@@ -100,7 +88,7 @@ if 0:
 
 #---- Step 3: Shortest path: hop distance among nodes ----
 if 0:
-    for k in [6, 7, 8, 9]:
+    for k in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 30, 35, 40, 45, 50]:
         print('************ Start ************')
         print('HopDistance, dataset: ' + dataset_name + ', k: ' + str(k))
         # ---- objection initialization setction ---------------
@@ -130,47 +118,7 @@ if 0:
 #------------------------------------
 
 
-#---- Step 4: Graph Bert Pre-Training on Node Raw Feature Reconstruction ----
-if 0:
-    #---- hyper-parameters ----
-    x_size = nfeature
-    hidden_size = 32
-    num_attention_heads = 8
-    num_hidden_layers = 12
-    y_size = nclass
-    graph_size = ngraph
-    # --------------------------
-
-    print('************ Start ************')
-    print('GrapBert, dataset: ' + dataset_name + ', k: ' + str(k))
-    # ---- objection initialization setction ---------------
-    data_obj = DatasetLoader()
-    data_obj.dataset_source_folder_path = './data/' + dataset_name + '/'
-    data_obj.dataset_name = dataset_name
-    data_obj.k = k
-    data_obj.load_all_tag = True
-
-    bert_config = GraphBertConfig(x_size=nfeature, y_size=y_size, hidden_size=hidden_size, num_attention_heads=num_attention_heads, num_hidden_layers=num_hidden_layers)
-    method_obj = MethodGraphBertNodeConstruct(bert_config)
-
-    result_obj = ResultSaving()
-    result_obj.result_destination_folder_path = './result/GraphBert/'
-    result_obj.result_destination_file_name = dataset_name
-
-    setting_obj = Settings()
-
-    evaluate_obj = None
-    # ------------------------------------------------------
-
-    # ---- running section ---------------------------------
-    setting_obj.prepare(data_obj, method_obj, result_obj, evaluate_obj)
-    setting_obj.load_run_save_evaluate()
-    # ------------------------------------------------------
-
-    print('************ Finish ************')
-#------------------------------------
-
-#---- Step 6: Graph Bert Node Classification (Cora) ----
+#---- Step 4: Graph Bert Node Classification (Cora) ----
 if 1:
     #---- hyper-parameters ----
     k = 7
