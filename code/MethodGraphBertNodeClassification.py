@@ -111,7 +111,7 @@ class MethodGraphBertNodeClassification(BertPreTrainedModel):
                                                 'time': time.time() - t_epoch_begin}
 
             # -------------------------
-            if epoch % 1 == 0:
+            if epoch % 50 == 0:
                 print('Epoch: {:04d}'.format(epoch + 1),
                       'loss_train: {:.4f}'.format(loss_train.item()),
                       'acc_train: {:.4f}'.format(acc_train.item()),
