@@ -1,11 +1,12 @@
 # Graph-Bert
-Source code of "Graph-Bert: Only Attention is Needed for Learning Graph Representations". 
+
+### Source code of "Graph-Bert: Only Attention is Needed for Learning Graph Representations". 
 
 The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
 At our group homepage, we also have a copy of our latest paper released: http://www.ifmlab.org/files/paper/graph_bert.pdf
 
-Two other papers can be helpful for readers to follow the ideas in this paper and the program
+### Two other papers can be helpful for readers to follow the ideas in this paper and the program
 
 (1) SEGEN: Sample-Ensemble Genetic Evolutional Network Model https://arxiv.org/abs/1803.08631
 
@@ -13,7 +14,7 @@ Two other papers can be helpful for readers to follow the ideas in this paper an
 
 ************************************************************************************************
 
-How to run the code?
+## How to run the code?
 
 (1) The Graph-Bert model takes (a) node WL code, (b) intimacy based subgraph batch, (c) node hop distance as the prior inputs. These can be computed with the script_1_preprocess.py.
 
@@ -26,7 +27,7 @@ How to run the code?
 We suggest to run the code with Pycharm.
 
 
-Several toolkits may be needed to run the code
+## Several toolkits may be needed to run the code
 (1) pytorch (https://anaconda.org/pytorch/pytorch)
 (2) sklearn (https://anaconda.org/anaconda/scikit-learn) 
 (3) transformers (https://anaconda.org/conda-forge/transformers) 
@@ -35,7 +36,7 @@ Several toolkits may be needed to run the code
 
 ************************************************************************************************
 
-Organization of the code?
+## Organization of the code?
 
 A simpler template of the code is also available at http://www.ifmlab.org/files/template/IFM_Lab_Program_Template_Python3.zip
 
@@ -49,6 +50,8 @@ The whole program is divided into five main parts:
 The base class of these five parts are defined in ./code/base_class/, they are all abstract class defining the templates and architecture of the code.
 
 The inherited class are provided in ./code, which inherit from the base classes, implement the abstract methonds.
+
+## Detailed information on funtional classes?
 
 a. data
 (1) DatasetLoader.py (for dataset loading)
