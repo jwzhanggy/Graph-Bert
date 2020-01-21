@@ -5,6 +5,9 @@ The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
 At our group homepage, we also have a copy of our latest paper released: http://www.ifmlab.org/files/paper/graph_bert.pdf
 
+Two other papers can be helpful for readers to follow the ideas in this paper and the program
+(1) SEGEN: Sample-Ensemble Genetic Evolutional Network Model https://arxiv.org/abs/1803.08631
+(2) GResNet: Graph Residual Network for Reviving Deep GNNs from Suspended Animation https://arxiv.org/abs/1909.05729
 
 ************************************************************************************************
 
