@@ -5,7 +5,8 @@ The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
 At our group homepage, we also have a copy released: http://www.ifmlab.org/files/paper/graph_bert.pdf
 
-Please check the script.py as the entry point. We suggest to run the code with Pycharm instead.
+Please check the script_3_fine_tuning.py as the entry point to run the model. 
+We suggest to run the code with Pycharm instead.
 
 Several toolkits may be needed to run the code
 (1) pytorch (https://anaconda.org/pytorch/pytorch)
