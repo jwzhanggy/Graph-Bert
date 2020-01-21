@@ -114,8 +114,7 @@ class BertEmbeddings(nn.Module):
         hop_embeddings = self.hop_dis_embeddings(hop_dis_ids)
 
         #---- here, we use summation ----
-        embeddings = role_embeddings# + role_embeddings + position_embeddings + hop_embeddings
-        #embeddings = raw_feature_embeds  # + role_embeddings + position_embeddings + hop_embeddings
+        embeddings = raw_feature_embeds + role_embeddings + position_embeddings + hop_embeddings
         embeddings = self.LayerNorm(embeddings)
         embeddings = self.dropout(embeddings)
         return embeddings
