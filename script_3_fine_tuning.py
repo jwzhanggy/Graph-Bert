@@ -52,7 +52,7 @@ if 1:
     x_size = nfeature
     hidden_size = intermediate_size = 32
     num_attention_heads = 2
-    num_hidden_layers = 50
+    num_hidden_layers = 2
     y_size = nclass
     graph_size = ngraph
     residual_type = 'graph_raw'
