@@ -41,10 +41,15 @@ We suggest to run the code with Pycharm and python3.
 A simpler template of the code is also available at http://www.ifmlab.org/files/template/IFM_Lab_Program_Template_Python3.zip
 
 The whole program is divided into five main parts:
+
 (1) data.py (for data loading and basic data organization operators, defines abstract method load() )
+
 (2) method.py (for complex operations on the data, defines abstract method run() )
+
 (3) result.py (for saving/loading results from files, defines abstract method load() and save() )
+
 (4) evaluate.py (for result evaluation, defines abstract method evaluate() )
+
 (5) setting.py (for experiment settings, defines abstract method load_run_save_evaluate() )
 
 The base class of these five parts are defined in ./code/base_class/, they are all abstract class defining the templates and architecture of the code.
@@ -54,37 +59,51 @@ The inherited class are provided in ./code, which inherit from the base classes,
 ## Detailed information on funtional classes?
 
 a. data
+
 (1) DatasetLoader.py (for dataset loading)
 
 
 b. method
 
 b-1 pre-computing methods
+
 (1) MethodWLNodeColoring.py (for WL code computing)
+
 (2) MethodGraphBatching.py (for subgraph batching)
+
 (3) MethodHopDistance.py (for hop distance computing)
 
 b-2 graph-bert basics
+
 (1) MethodBertComp.py (for graph-bert basic components)
+
 (2) MethodGraphBert.py (the graph bert model)
 
 b-3 graph-bert applications
+
 (1) MethodGraphBertNodeClassification.py 
+
 (2) MethodGraphBertGraphClustering.py
+
 (3) MethodGraphBertNodeConstruct.py
+
 (4) MethodGraphBertGraphRecovery.py
 
 
 c. result
+
 (1) ResultSaving.py (for saving results to file)
 
 
 d. evaluate
+
 (1) EvaluateAcc.py (accuracy metric)
+
 (2) EvaluateClustering.py (a bunch of clustering metrics)
 
 
 e. setting
+
 (1) Settings.py (defines the interactions and data exchange among the above classes)
 
 ************************************************************************************************
