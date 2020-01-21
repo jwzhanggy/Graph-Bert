@@ -8,7 +8,7 @@ Concrete MethodModule class for a specific learning MethodModule
 import math
 import torch
 import torch.nn as nn
-from transformers.modeling_bert import BertLayer, BertLMPredictionHead, BertPredictionHeadTransform
+from transformers.modeling_bert import BertPredictionHeadTransform, BertAttention, BertIntermediate, BertOutput
 from transformers.configuration_utils import PretrainedConfig
 
 BertLayerNorm = torch.nn.LayerNorm
@@ -33,6 +33,7 @@ class GraphBertConfig(PretrainedConfig):
         attention_probs_dropout_prob=0.3,
         initializer_range=0.02,
         layer_norm_eps=1e-12,
+        is_decoder=False,
         **kwargs
     ):
         super(GraphBertConfig, self).__init__(**kwargs)
@@ -52,6 +53,7 @@ class GraphBertConfig(PretrainedConfig):
         self.attention_probs_dropout_prob = attention_probs_dropout_prob
         self.initializer_range = initializer_range
         self.layer_norm_eps = layer_norm_eps
+        self.is_decoder = is_decoder
 
 class BertEncoder(nn.Module):
     def __init__(self, config):
@@ -112,7 +114,8 @@ class BertEmbeddings(nn.Module):
         hop_embeddings = self.hop_dis_embeddings(hop_dis_ids)
 
         #---- here, we use summation ----
-        embeddings = raw_feature_embeds + role_embeddings + position_embeddings + hop_embeddings
+        embeddings = role_embeddings# + role_embeddings + position_embeddings + hop_embeddings
+        #embeddings = raw_feature_embeds  # + role_embeddings + position_embeddings + hop_embeddings
         embeddings = self.LayerNorm(embeddings)
         embeddings = self.dropout(embeddings)
         return embeddings
@@ -135,3 +138,37 @@ class NodeConstructOutputLayer(nn.Module):
         hidden_states = self.transform(hidden_states)
         hidden_states = self.decoder(hidden_states) + self.bias
         return hidden_states
+
+class BertLayer(nn.Module):
+    def __init__(self, config):
+        super().__init__()
+        self.attention = BertAttention(config)
+        self.is_decoder = config.is_decoder
+        if self.is_decoder:
+            self.crossattention = BertAttention(config)
+        self.intermediate = BertIntermediate(config)
+        self.output = BertOutput(config)
+
+    def forward(
+        self,
+        hidden_states,
+        attention_mask=None,
+        head_mask=None,
+        encoder_hidden_states=None,
+        encoder_attention_mask=None,
+    ):
+        self_attention_outputs = self.attention(hidden_states, attention_mask, head_mask)
+        attention_output = self_attention_outputs[0]
+        outputs = self_attention_outputs[1:]  # add self attentions if we output attention weights
+
+        if self.is_decoder and encoder_hidden_states is not None:
+            cross_attention_outputs = self.crossattention(
+                attention_output, attention_mask, head_mask, encoder_hidden_states, encoder_attention_mask
+            )
+            attention_output = cross_attention_outputs[0]
+            outputs = outputs + cross_attention_outputs[1:]  # add cross attentions if we output attention weights
+
+        intermediate_output = self.intermediate(attention_output)
+        layer_output = self.output(intermediate_output, attention_output)
+        outputs = (layer_output,) + outputs
+        return outputs
