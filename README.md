@@ -18,13 +18,13 @@ Several toolkits may be needed to run the code
 
 Learning results of Graph-Bert with graph-raw residual on Cora dataset.
 
-![Learning Results of Graph-Bert with Graph Residual on Cora](./cora_graph_residual_k_7.png)
+![Learning Results of Graph-Bert with Graph Residual on Cora](./result/screenshot/cora_graph_residual_k_7.png)
 
 
 ************************************************************************************************
 
 Learning results of Graph-Bert with raw residual on Cora dataset.
 
-![Learning Results of Graph-Bert with Raw Residual on Cora](./cora_raw_residual_k_7.png)
+![Learning Results of Graph-Bert with Raw Residual on Cora](./result/screenshot/cora_raw_residual_k_7.png)
 
 ************************************************************************************************
