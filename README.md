@@ -24,7 +24,7 @@ At our group homepage, we also have a copy of our latest paper released: http://
 
 (4) script_4_evaluation_plots.py is used for plots drawing and results evaluation purposes.
 
-We suggest to run the code with Pycharm.
+We suggest to run the code with Pycharm and python3.
 
 
 #### Several toolkits may be needed to run the code
