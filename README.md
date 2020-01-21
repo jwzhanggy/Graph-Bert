@@ -10,7 +10,7 @@ At our group homepage, we also have a copy of our latest paper released: http://
 
 How to run the code?
 
-(1) The Graph-Bert model takes (1) node WL code, (2) intimacy based subgraph batch, (3) node hop distance as the prior inputs. These can be computed with the script_1_preprocess.py.
+(1) The Graph-Bert model takes (a) node WL code, (b) intimacy based subgraph batch, (c) node hop distance as the prior inputs. These can be computed with the script_1_preprocess.py.
 
 (2) Pre-training of Graph-Bert based on node attribute reconstruction and graph structure recovery is provided by script_2_pre_train.py.
 
@@ -18,7 +18,7 @@ How to run the code?
 
 (4) script_4_evaluation_plots.py is used for plots drawing and results evaluation purposes.
 
-We suggest to run the code with Pycharm instead.
+We suggest to run the code with Pycharm.
 
 
 Several toolkits may be needed to run the code
