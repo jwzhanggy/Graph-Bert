@@ -24,8 +24,9 @@ The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
 (4) script_4_evaluation_plots.py is used for plots drawing and results evaluation purposes.
 
-We suggest to run the code with Pycharm and python3.
+#### To run a script, you can just use command line: python3 script_name.py
 
+We suggest to run the code with Pycharm and python3.
 
 #### Several toolkits may be needed to run the code
 (1) pytorch (https://anaconda.org/pytorch/pytorch)
