@@ -15,10 +15,15 @@ The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 #### References
 
 @article{zhang2020graph,
+
   title={Graph-Bert: Only Attention is Needed for Learning Graph Representations},
+  
   author={Zhang, Jiawei and Zhang, Haopeng and Xia, Congying and Sun, Li},
+  
   journal={arXiv preprint arXiv:2001.05140},
+  
   year={2020}
+  
 }
 
 ************************************************************************************************
