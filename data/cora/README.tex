@@ -16,13 +16,13 @@ After stemming and removing stopwords we were left with a vocabulary of size 143
 
 THE DIRECTORY CONTAINS TWO FILES:
 
-The link file contains descriptions of the papers in the following format:
+The node file contains descriptions of the papers in the following format:
 
 		<paper_id> <word_attributes>+ <class_label>
 
 The first entry in each line contains the unique string ID of the paper followed by binary values indicating whether each word in the vocabulary is present (indicated by 1) or absent (indicated by 0) in the paper. Finally, the last entry in the line contains the class label of the paper.
 
-The node file contains the citation graph of the corpus. Each line describes a link in the following format:
+The link file contains the citation graph of the corpus. Each line describes a link in the following format:
 
 		<ID of cited paper> <ID of citing paper>
 
