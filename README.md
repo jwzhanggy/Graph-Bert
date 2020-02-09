@@ -25,6 +25,12 @@ The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
 ## How to run the code?
 
+### To run a script, you can just use command line: python3 script_name.py
+
+We suggest to run the code with Pycharm and python3.
+
+### What are the scripts used for?
+
 (1) The Graph-Bert model takes (a) node WL code, (b) intimacy based subgraph batch, (c) node hop distance as the prior inputs. These can be computed with the script_1_preprocess.py.
 
 (2) Pre-training of Graph-Bert based on node attribute reconstruction and graph structure recovery is provided by script_2_pre_train.py.
@@ -33,9 +39,9 @@ The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
 (4) script_4_evaluation_plots.py is used for plots drawing and results evaluation purposes.
 
-### To run a script, you can just use command line: python3 script_name.py
+### How to turn on/off the blocks?
 
-We suggest to run the code with Pycharm and python3.
+You can change the "if 0" to "if 1" to turn on a script block, and the reverse to turn off a script block.
 
 ### Several toolkits may be needed to run the code
 (1) pytorch (https://anaconda.org/pytorch/pytorch)
