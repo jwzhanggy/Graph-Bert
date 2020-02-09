@@ -1,6 +1,6 @@
 # Graph-Bert
 
-## Source code of "Graph-Bert: Only Attention is Needed for Learning Graph Representations". 
+## Graph-Bert: Only Attention is Needed for Learning Graph Representations 
 
 At our group homepage, we also have a copy of our latest paper released: http://www.ifmlab.org/files/paper/graph_bert.pdf
 
@@ -56,7 +56,7 @@ You can change the "if 0" to "if 1" to turn on a script block, and the reverse t
 
 A simpler template of the code is also available at http://www.ifmlab.org/files/template/IFM_Lab_Program_Template_Python3.zip
 
-The whole program is divided into five main parts:
+### The whole program is divided into five main parts:
 
 (1) data.py (for data loading and basic data organization operators, defines abstract method load() )
 
