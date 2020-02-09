@@ -1,6 +1,6 @@
 # Graph-Bert
 
-### Source code of "Graph-Bert: Only Attention is Needed for Learning Graph Representations". 
+## Source code of "Graph-Bert: Only Attention is Needed for Learning Graph Representations". 
 
 At our group homepage, we also have a copy of our latest paper released: http://www.ifmlab.org/files/paper/graph_bert.pdf
 
@@ -68,14 +68,14 @@ The inherited class are provided in ./code, which inherit from the base classes,
 
 ## Detailed information on funtional classes?
 
-#### a. data
+### a. data
 
 (1) DatasetLoader.py (for dataset loading)
 
 
-#### b. method
+### b. method
 
-##### b-1 pre-computing methods
+#### b-1 pre-computing methods
 
 (1) MethodWLNodeColoring.py (for WL code computing)
 
@@ -83,13 +83,13 @@ The inherited class are provided in ./code, which inherit from the base classes,
 
 (3) MethodHopDistance.py (for hop distance computing)
 
-##### b-2 graph-bert basics
+#### b-2 graph-bert basics
 
 (1) MethodBertComp.py (for graph-bert basic components)
 
 (2) MethodGraphBert.py (the graph bert model)
 
-##### b-3 graph-bert applications
+#### b-3 graph-bert applications
 
 (1) MethodGraphBertNodeClassification.py 
 
@@ -100,32 +100,32 @@ The inherited class are provided in ./code, which inherit from the base classes,
 (4) MethodGraphBertGraphRecovery.py
 
 
-#### c. result
+### c. result
 
 (1) ResultSaving.py (for saving results to file)
 
 
-#### d. evaluate
+### d. evaluate
 
 (1) EvaluateAcc.py (accuracy metric)
 
 (2) EvaluateClustering.py (a bunch of clustering metrics)
 
 
-#### e. setting
+### e. setting
 
 (1) Settings.py (defines the interactions and data exchange among the above classes)
 
 ************************************************************************************************
 
-#### Learning results of Graph-Bert with graph-raw residual on Cora dataset.
+## Learning results of Graph-Bert with graph-raw residual on Cora dataset.
 
 ![Learning Results of Graph-Bert with Graph Residual on Cora](./result/screenshot/cora_graph_residual_k_7.png)
 
 
 ************************************************************************************************
 
-#### Learning results of Graph-Bert with raw residual on Cora dataset.
+## Learning results of Graph-Bert with raw residual on Cora dataset.
 
 ![Learning Results of Graph-Bert with Raw Residual on Cora](./result/screenshot/cora_raw_residual_k_7.png)
 
