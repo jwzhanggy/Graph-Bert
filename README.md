@@ -12,6 +12,11 @@ The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
 (2) GResNet: Graph Residual Network for Reviving Deep GNNs from Suspended Animation https://arxiv.org/abs/1909.05729
 
+### Graph-Bert Paper List
+
+A list of the latest research papers on graph-bert can be found via the following link<br>
+Page URL: https://github.com/jwzhanggy/graph_bert_work
+
 ### References
 
 @article{zhang2020graph,<br/>
