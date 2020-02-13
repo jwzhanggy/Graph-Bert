@@ -32,6 +32,8 @@ Page URL: https://github.com/jwzhanggy/graph_bert_work
 
 ### To run a script, you can just use command line: python3 script_name.py
 
+After downloading the code, you can run "python3 script_3_fine_tuning.py" directly for node classification.
+
 We suggest to run the code with Pycharm and python3.
 
 ### What are the scripts used for?
