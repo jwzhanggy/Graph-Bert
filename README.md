@@ -129,7 +129,7 @@ The inherited class are provided in ./code, which inherit from the base classes,
 
 ************************************************************************************************
 
-## Learning results of Graph-Bert with graph-raw residual on Cora dataset.
+## Learning results (the best encountered) of Graph-Bert with graph-raw residual on Cora dataset.
 
 ![Learning Results of Graph-Bert with Graph Residual on Cora](./result/screenshot/cora_graph_residual_k_7.png)
 
