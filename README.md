@@ -6,7 +6,7 @@ At our group homepage, we also have a copy of our latest paper released: http://
 
 The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
-### Two other papers are for readers to follow the ideas in this paper and the code
+### Two other papers are helpful for readers to follow the ideas in this paper and the code
 
 (1) SEGEN: Sample-Ensemble Genetic Evolutional Network Model https://arxiv.org/abs/1803.08631
 
