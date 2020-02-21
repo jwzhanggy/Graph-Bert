@@ -20,12 +20,12 @@ Page URL: https://github.com/jwzhanggy/graph_bert_work
 ### References
 
 ```
-@article{zhang2020graph,<br/>
-  title={Graph-Bert: Only Attention is Needed for Learning Graph Representations},<br/>
-  author={Zhang, Jiawei and Zhang, Haopeng and Xia, Congying and Sun, Li},<br/>
-  journal={arXiv preprint arXiv:2001.05140},<br/>
-  year={2020}<br/>
-}<br/>
+@article{zhang2020graph,
+  title={Graph-Bert: Only Attention is Needed for Learning Graph Representations},
+  author={Zhang, Jiawei and Zhang, Haopeng and Xia, Congying and Sun, Li},
+  journal={arXiv preprint arXiv:2001.05140},
+  year={2020}
+}
 ```
 
 ************************************************************************************************
@@ -34,7 +34,11 @@ Page URL: https://github.com/jwzhanggy/graph_bert_work
 
 ### To run a script, you can just use command line: python3 script_name.py
 
-After downloading the code, you can run "python3 script_3_fine_tuning.py" directly for node classification.
+After downloading the code, you can run
+```
+python3 script_3_fine_tuning.py
+```
+directly for node classification.
 
 We suggest to run the code with Pycharm and python3.
 
