@@ -19,12 +19,14 @@ Page URL: https://github.com/jwzhanggy/graph_bert_work
 
 ### References
 
+```
 @article{zhang2020graph,<br/>
   title={Graph-Bert: Only Attention is Needed for Learning Graph Representations},<br/>
   author={Zhang, Jiawei and Zhang, Haopeng and Xia, Congying and Sun, Li},<br/>
   journal={arXiv preprint arXiv:2001.05140},<br/>
   year={2020}<br/>
 }<br/>
+```
 
 ************************************************************************************************
 
