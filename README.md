@@ -38,9 +38,7 @@ After downloading the code, you can run
 ```
 python3 script_3_fine_tuning.py
 ```
-directly for node classification.
-
-We suggest to run the code with Pycharm and python3.
+directly for node classification. We suggest to run the code with Pycharm and python3.
 
 ### What are the scripts used for?
 
