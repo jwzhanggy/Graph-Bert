@@ -51,14 +51,7 @@ class MethodGraphBertGraphClustering(BertPreTrainedModel):
         self.learning_record_dict = clustering
 
     def run(self):
-        if self.load_pretrained_path != '':
-            self.use_raw_feature = False
-            print('loading pretrained model from ' + self.load_pretrained_path + '...')
-            self.bert = MethodGraphBert.from_pretrained(self.load_pretrained_path)
 
         self.train_model(self.max_epoch)
 
-        if self.save_pretrained_path != '':
-            print('saving pretrained model to ' + self.save_pretrained_path + '...')
-            self.bert.save_pretrained(self.save_pretrained_path)
         return self.learning_record_dict
