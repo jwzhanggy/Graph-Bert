@@ -73,8 +73,6 @@ if 1:
     method_obj.spy_tag = True
     method_obj.max_epoch = max_epoch
     method_obj.lr = lr
-    method_obj.load_pretrained_path = ''
-    method_obj.save_pretrained_path =  ''
 
     result_obj = ResultSaving()
     result_obj.result_destination_folder_path = './result/GraphBert/'
@@ -137,8 +135,6 @@ if 0:
     method_obj.spy_tag = True
     method_obj.max_epoch = max_epoch
     method_obj.lr = lr
-    method_obj.load_pretrained_path = ''
-    method_obj.save_pretrained_path =  ''#''./result/PreTrained_GraphBert/' + dataset_name + '/node_classification_along/'
 
     result_obj = ResultSaving()
     result_obj.result_destination_folder_path = './result/GraphBert/clustering_' + dataset_name

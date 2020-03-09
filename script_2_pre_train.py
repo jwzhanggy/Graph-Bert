@@ -36,7 +36,7 @@ elif dataset_name == 'pubmed':
 
 
 #---- Pre-Training Task #1: Graph Bert Node Attribute Reconstruction (Cora, Citeseer, and Pubmed) ----
-if 1:
+if 0:
     #---- hyper-parameters ----
     if dataset_name == 'pubmed':
         lr = 0.001
@@ -73,8 +73,6 @@ if 1:
     method_obj = MethodGraphBertNodeConstruct(bert_config)
     method_obj.max_epoch = max_epoch
     method_obj.lr = lr
-    method_obj.load_pretrained_path = ''
-    method_obj.save_pretrained_path = './result/PreTrained_GraphBert/' + dataset_name + '/node_reconstruction_along/'
 
     result_obj = ResultSaving()
     result_obj.result_destination_folder_path = './result/GraphBert/'
@@ -100,7 +98,7 @@ if 1:
 
 
 #---- Pre-Training Task #2: Graph Bert Network Structure Recovery (Cora, Citeseer, and Pubmed) ----
-if 1:
+if 0:
     #---- hyper-parameters ----
     if dataset_name == 'pubmed':
         lr = 0.001
@@ -141,8 +139,6 @@ if 1:
     method_obj = MethodGraphBertGraphRecovery(bert_config)
     method_obj.max_epoch = max_epoch
     method_obj.lr = lr
-    method_obj.load_pretrained_path = ''
-    method_obj.save_pretrained_path = './result/PreTrained_GraphBert/' + dataset_name + '/node_classification+structure_recovery/'
 
     result_obj = ResultSaving()
     result_obj.result_destination_folder_path = './result/GraphBert/'

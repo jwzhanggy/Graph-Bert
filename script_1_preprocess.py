@@ -10,7 +10,7 @@ from code.Settings import Settings
 
 #---- 'cora' , 'citeseer', 'pubmed' ----
 
-dataset_name = 'cora-small'
+dataset_name = 'cora'
 
 np.random.seed(1)
 torch.manual_seed(1)
@@ -64,7 +64,7 @@ if 1:
 
 #---- Step 2: intimacy calculation and subgraph batching ----
 if 1:
-    for k in [1, 2, 3, 4, 5]:#, 10, 15, 20, 25, 30, 35, 40, 45, 50]:
+    for k in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:#, 10, 15, 20, 25, 30, 35, 40, 45, 50]:
         print('************ Start ************')
         print('Subgraph Batching, dataset: ' + dataset_name + ', k: ' + str(k))
         # ---- objection initialization setction ---------------
@@ -95,7 +95,7 @@ if 1:
 
 #---- Step 3: Shortest path: hop distance among nodes ----
 if 1:
-    for k in [1, 2, 3, 4, 5]:
+    for k in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
         print('************ Start ************')
         print('HopDistance, dataset: ' + dataset_name + ', k: ' + str(k))
         # ---- objection initialization setction ---------------
