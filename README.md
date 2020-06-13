@@ -2,7 +2,7 @@
 
 ## Graph-Bert: Only Attention is Needed for Learning Graph Representations 
 
-At our group homepage, we also have a copy of our latest paper released: http://www.ifmlab.org/files/paper/graph_bert.pdf
+At our group homepage, we have a copy of our latest paper released: http://www.ifmlab.org/files/paper/graph_bert.pdf
 
 The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
