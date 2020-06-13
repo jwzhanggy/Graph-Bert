@@ -6,16 +6,16 @@ At our group homepage, we also have a copy of our latest paper released: http://
 
 The paper at arXiv is available at https://arxiv.org/abs/2001.05140
 
+### Graph-Bert Paper List
+
+A list of the latest research papers on graph-bert can be found via the following link<br>
+Page URL: https://github.com/jwzhanggy/graph_bert_work
+
 ### Two other papers are helpful for readers to follow the ideas in this paper and the code
 
 (1) SEGEN: Sample-Ensemble Genetic Evolutional Network Model https://arxiv.org/abs/1803.08631
 
 (2) GResNet: Graph Residual Network for Reviving Deep GNNs from Suspended Animation https://arxiv.org/abs/1909.05729
-
-### Graph-Bert Paper List
-
-A list of the latest research papers on graph-bert can be found via the following link<br>
-Page URL: https://github.com/jwzhanggy/graph_bert_work
 
 ### References
 
