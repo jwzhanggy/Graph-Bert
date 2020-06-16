@@ -2,14 +2,14 @@
 
 ## Graph-Bert: Only Attention is Needed for Learning Graph Representations 
 
-At our group homepage, we have a copy of our latest paper released: http://www.ifmlab.org/files/paper/graph_bert.pdf
+Paper URL at IFM Lab: http://www.ifmlab.org/files/paper/graph_bert.pdf
 
-The paper at arXiv is available at https://arxiv.org/abs/2001.05140
+Paper URL at arXiv: https://arxiv.org/abs/2001.05140
 
 ### Graph-Bert Paper List
 
 A list of the latest research papers on graph-bert can be found via the following link<br>
-Page URL: https://github.com/jwzhanggy/graph_bert_work
+Page List URL: https://github.com/jwzhanggy/graph_bert_work
 
 ### Two other papers are helpful for readers to follow the ideas in this paper and the code
 
