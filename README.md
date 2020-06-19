@@ -1,5 +1,7 @@
 # Graph-Bert
 
+![Graph-Bert Model Architecture](./result/screenshot/model.png)
+
 ## Graph-Bert: Only Attention is Needed for Learning Graph Representations 
 
 Paper URL at IFM Lab: http://www.ifmlab.org/files/paper/graph_bert.pdf
