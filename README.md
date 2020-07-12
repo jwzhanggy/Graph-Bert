@@ -19,6 +19,11 @@ Page List URL: https://github.com/jwzhanggy/graph_bert_work
 
 (2) GResNet: Graph Residual Network for Reviving Deep GNNs from Suspended Animation https://arxiv.org/abs/1909.05729
 
+### Graph Neural Networks from IFM Lab
+
+The latest graph neural network models proposed by IFM Lab can be found via the following link<br>
+IFM Lab GNNs: https://github.com/jwzhanggy/IFMLab_GNN
+
 ### References
 
 ```
