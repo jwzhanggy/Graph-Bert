@@ -61,11 +61,18 @@ directly for node classification. It seems the random seed cannot control the ra
 
 You can change the "if 0" to "if 1" to turn on a script block, and the reverse to turn off a script block.
 
+### How save/load pre-trained graph-bert?
+
+Please refer to the attached page for model save/load in pytorch:<br>
+https://pytorch.org/tutorials/beginner/saving_loading_models.html
+
+According to our experiments, Save/Load Entire Model in the above page works perfectly, whereas Save/Load state_dict doesn't really work.
+
 ### Several toolkits may be needed to run the code
-(1) pytorch (https://anaconda.org/pytorch/pytorch)
-(2) sklearn (https://anaconda.org/anaconda/scikit-learn) 
-(3) transformers (https://anaconda.org/conda-forge/transformers) 
-(4) networkx (https://anaconda.org/anaconda/networkx) 
+(1) pytorch (https://anaconda.org/pytorch/pytorch) <br>
+(2) sklearn (https://anaconda.org/anaconda/scikit-learn) <br>
+(3) transformers (https://anaconda.org/conda-forge/transformers) <br>
+(4) networkx (https://anaconda.org/anaconda/networkx) <br>
 
 
 ************************************************************************************************
