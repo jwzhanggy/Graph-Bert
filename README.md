@@ -66,7 +66,7 @@ You can change the "if 0" to "if 1" to turn on a script block, and the reverse t
 Please refer to the attached page for model save/load in pytorch:<br>
 https://pytorch.org/tutorials/beginner/saving_loading_models.html
 
-According to our experiments, Save/Load Entire Model in the above page works perfectly, whereas Save/Load state_dict doesn't really work.
+You can load the pre-trained graph-bert component with pytorch model (e.g., the graph-bert inside MethodGraphBertNodeClassification) with the save and load functions in the above page. According to our experiments, Save/Load Entire Model in the above page works perfectly, whereas Save/Load state_dict doesn't really work.
 
 ### Several toolkits may be needed to run the code
 (1) pytorch (https://anaconda.org/pytorch/pytorch) <br>
