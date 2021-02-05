@@ -3,6 +3,7 @@
 ```diff
 - Depending on your transformer toolkit versions, the transformer import code may need to be adjusted, like as follows:
 from transformers.modeling_bert --> from transformers.models.bert.modeling_bert
+- (Please check your transformer toolikt, and update the import code accordingly.)
 ```
 
 
