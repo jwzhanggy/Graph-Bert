@@ -1,7 +1,7 @@
 # Graph-Bert
 
 ```diff
-- Depending on your transformer toolkit versions, the toolkit import code may need to be adjusted as follows:
+- Depending on your transformer toolkit versions, the transformer import code may need to be adjusted, like as follows:
 from transformers.modeling_bert --> from transformers.models.bert.modeling_bert
 ```
 
