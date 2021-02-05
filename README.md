@@ -1,8 +1,9 @@
 # Graph-Bert
 
+```diff
 - Depending on the versions of transformer toolkit you download, the toolkit import code may need to be adjusted, like as follows
-
 - from transformers.modeling_bert --> from transformers.models.bert.modeling_bert
+```
 
 
 ![Graph-Bert Model Architecture](./result/screenshot/model.png)
