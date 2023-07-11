@@ -1,6 +1,6 @@
 import torch
 
-from transformers.modeling_bert import BertPreTrainedModel
+from transformers.models.bert.modeling_bert import BertPreTrainedModel
 from code.MethodGraphBert import MethodGraphBert
 
 import time

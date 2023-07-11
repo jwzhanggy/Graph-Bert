@@ -8,7 +8,7 @@ Concrete MethodModule class for a specific learning MethodModule
 import math
 import torch
 import torch.nn as nn
-from transformers.modeling_bert import BertPredictionHeadTransform, BertAttention, BertIntermediate, BertOutput
+from transformers.models.bert.modeling_bert import BertPredictionHeadTransform, BertAttention, BertIntermediate, BertOutput
 from transformers.configuration_utils import PretrainedConfig
 
 BertLayerNorm = torch.nn.LayerNorm
@@ -54,6 +54,8 @@ class GraphBertConfig(PretrainedConfig):
         self.initializer_range = initializer_range
         self.layer_norm_eps = layer_norm_eps
         self.is_decoder = is_decoder
+
+
 
 class BertEncoder(nn.Module):
     def __init__(self, config):
